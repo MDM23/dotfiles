@@ -1,4 +1,4 @@
-export PATH="$HOME/bin:$HOME/.cargo/bin:$HOME/.gem/ruby/2.5.0/bin:$HOME/.yarn/bin:$PATH"
+export PATH="$HOME/bin:$HOME/.cargo/bin:$HOME/.gem/ruby/2.7.0/bin:$HOME/.yarn/bin:$PATH"
 export CDPATH=".:$HOME:$HOME/src"
 export GOPATH="$HOME"
 export EDITOR="nvim"

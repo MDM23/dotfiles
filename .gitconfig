@@ -1,0 +1,29 @@
+[user]
+  email = mdm23@gmx.de
+  name = Peter Frank
+[alias]
+  up = pull --rebase --autostash
+  dd = difftool --dir-diff
+  ddd = !git difftool --dir-diff $(git merge-base --fork-point develop)
+  lol = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+[diff]
+  tool = meld
+[difftool]
+  prompt = false
+[difftool "meld"]
+  cmd = meld "$LOCAL" "$REMOTE"
+[merge]
+  tool = meld
+[mergetool "meld"]
+  ;cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
+  cmd = meld "$LOCAL" "$BASE" "$REMOTE" --output "$MERGED"
+[includeIf "gitdir:~/src/gitlab.aspiria.de/**"]
+  path = ~/.gitconfig-aspiria
+[url "git@github.com:"]
+  insteadOf = https://github.com/
+[url "git@github.com:"]
+  pushInsteadOf = "git://github.com/"
+[url "git@github.com:"]
+  pushInsteadOf = "https://github.com/"
+[core]
+  excludesfile = /home/pete/.gitignore

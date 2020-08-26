@@ -1,20 +1,28 @@
 #! /bin/sh
 
 sxhkd &
-$HOME/.config/polybar/launch.sh
+picom &
 
-bspc monitor -d I II III IV
+# Home configuration
+bspc monitor HDMI-0 -d msg prev
+bspc monitor DP-1 -d www code doc media
+
+# Office configuration
+bspc monitor DisplayPort-0 -d www code doc media
+bspc monitor DVI-0 -d msg prev
 
 bspc config border_width         4
-bspc config window_gap          32
+bspc config window_gap          30
 
-bspc config split_ratio          0.50
+bspc config split_ratio          0.60
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-bspc config top_padding 55
-bspc config left_padding 50
-bspc config right_padding 50
-bspc config bottom_padding 50
+bspc config top_padding 50
+bspc config left_padding 20
+bspc config right_padding 20
+bspc config bottom_padding 20
 
-feh --bg-center $(find ~/Bilder/Wallpaper -type f | shuf -n 1)
+feh --bg-fill $(find ~/Bilder/Hintergründe -type f | shuf -n 1)
+
+$HOME/.config/polybar/launch.sh

@@ -1,6 +1,7 @@
 [user]
   email = mdm23@gmx.de
   name = Peter Frank
+  signingkey = 959F9861F5D2019C
 [alias]
   up = pull --rebase --autostash
   dd = difftool --dir-diff

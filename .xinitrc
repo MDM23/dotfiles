@@ -9,7 +9,7 @@ xrdb ~/.Xresources
 xsetroot -cursor_name left_ptr
 
 if [ "$LOCATION" = "home" ]; then
-  xrandr --output DP-1 --right-of "HDMI-0" --primary
+  xrandr --output DP-2 --right-of "HDMI-0" --primary
 fi
 
 exec bspwm

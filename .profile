@@ -33,7 +33,7 @@ function config() {
 # Find out the physical machine
 FP=$(cat /sys/devices/virtual/dmi/id/modalias | md5sum | awk -vORS="" '{print $1}')
 case "$FP" in
-	"22d2bdab29ff870e3ff8faa4bcd05112")
+	"376669ddddc65fa609b140229f6d8133")
 		export LOCATION="home" ;;
 	"ecf0ab41ddb84c918575379635443491")
 		export LOCATION="mobile" ;;

@@ -8,7 +8,7 @@ while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
 
 case "$LOCATION" in
 	"home")
-		MONITOR_PRIMARY="DP-1"
+		MONITOR_PRIMARY="DP-2"
 		MONITOR_SECONDARY="HDMI-0"
         ;;
 	"office")

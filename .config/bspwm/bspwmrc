@@ -5,7 +5,7 @@ picom &
 
 # Home configuration
 bspc monitor HDMI-0 -d msg prev
-bspc monitor DP-1 -d www code doc media
+bspc monitor DP-2 -d www code doc media
 
 # Office configuration
 bspc monitor DisplayPort-0 -d www code doc media

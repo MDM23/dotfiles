@@ -30,7 +30,7 @@ font-2 = siji:pixelsize=10;1
 
 modules-left = bspwm
 modules-center = date
-modules-right = updates-arch-combined location office-timer pulseaudio
+modules-right = vpn updates-arch-combined location office-timer pulseaudio
 
 tray-position = right
 tray-padding = 2
@@ -58,6 +58,10 @@ exec = wt --tail
 tail = true
 click-left = kill -USR1 %pid%
 click-middle = kill -USR2 %pid%
+
+[module/vpn]
+type = custom/text
+content = "%{A1:rofi-vpn.sh:} VPN %{A}"
 
 [module/updates-arch-combined]
 type = custom/script

@@ -18,6 +18,10 @@ super + b
 super + shift + p
 	firefox --private-window
 
+# Code editor
+super + i
+	code
+
 # File manager
 super + e
 	thunar

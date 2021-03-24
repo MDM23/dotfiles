@@ -7,6 +7,7 @@ fi
 
 xrdb ~/.Xresources
 xsetroot -cursor_name left_ptr
+setxkbmap -option caps:escape
 
 if [ "$LOCATION" = "home" ]; then
   xrandr --output DP-2 --right-of "HDMI-0" --primary
